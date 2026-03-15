@@ -2,32 +2,35 @@
 <html lang="am">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; background: #0f172a; color: #f8fafc; }
-        .hero { 
-            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover; text-align: center;
-        }
-        .hero h1 { font-size: 5rem; color: #fbbf24; text-transform: uppercase; letter-spacing: 5px; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
-        .hero p { font-size: 1.5rem; margin: 20px 0; }
-        .btn-group a { 
-            padding: 15px 30px; margin: 10px; text-decoration: none; border-radius: 50px; font-weight: bold;
-            transition: 0.3s; display: inline-block;
-        }
-        .btn-employee { background: #3b82f6; color: white; }
-        .btn-employer { background: #10b981; color: white; }
-        .btn-group a:hover { transform: scale(1.1); }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #0f172a; color: #fff; }
+        
+        /* የሚሽከረከር የርዕስ ክፍል */
+        .marquee { background: #fbbf24; color: #000; padding: 15px; font-weight: bold; overflow: hidden; white-space: nowrap; }
+        .marquee marquee { font-size: 1.5rem; text-transform: uppercase; }
+
+        .hero { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        
+        .cta-container { margin-top: 30px; }
+        .btn { padding: 15px 30px; margin: 10px; text-decoration: none; border-radius: 50px; font-weight: bold; color: white; display: inline-block; }
+        .btn-emp { background: #3b82f6; }
+        .btn-job { background: #10b981; }
     </style>
 </head>
 <body>
 
+<div class="marquee">
+    <marquee behavior="scroll" direction="left">✨ BIG MAN AGENCY - ለኢንተርናሽናል ሆቴሎች የላቀ የሰው ኃይል አቅራቢ - YOUR SUCCESS IS OUR GOAL ✨</marquee>
+</div>
+
 <div class="hero">
     <h1>BIG MAN</h1>
-    <p>ዓለም አቀፍ የሆቴል የሰው ኃይል መዳረሻ</p>
-    <div class="btn-group">
-        <a href="employee.html" class="btn-employee">እኔ ሰራተኛ ነኝ</a>
-        <a href="employer.html" class="btn-employer">እኔ አሰሪ ነኝ</a>
+    <p>የዓለም አቀፍ ሆቴሎች መዳረሻ</p>
+    
+    <div class="cta-container">
+        <a href="employee.html" class="btn btn-job">እኔ ስራ ፈላጊ ነኝ</a>
+        <a href="employer.html" class="btn btn-emp">እኔ አሰሪ ነኝ</a>
     </div>
 </div>
 
