@@ -2,12 +2,34 @@
 <html lang="am">
 <head>
     <meta charset="UTF-8">
-    <title>Big Man Agency</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; background: #0f172a; color: #f8fafc; }
+        .hero { 
+            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; text-align: center;
+        }
+        .hero h1 { font-size: 5rem; color: #fbbf24; text-transform: uppercase; letter-spacing: 5px; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.5rem; margin: 20px 0; }
+        .btn-group a { 
+            padding: 15px 30px; margin: 10px; text-decoration: none; border-radius: 50px; font-weight: bold;
+            transition: 0.3s; display: inline-block;
+        }
+        .btn-employee { background: #3b82f6; color: white; }
+        .btn-employer { background: #10b981; color: white; }
+        .btn-group a:hover { transform: scale(1.1); }
+    </style>
 </head>
 <body>
-    <h1>Big Man Agency</h1>
-    <p>የአለም አቀፍ የሆቴል ስራ እድሎች መገናኛ</p>
-    <a href="employee.html">እኔ ሰራተኛ ነኝ</a>
-    <a href="employer.html">እኔ አሰሪ ነኝ</a>
+
+<div class="hero">
+    <h1>BIG MAN</h1>
+    <p>ዓለም አቀፍ የሆቴል የሰው ኃይል መዳረሻ</p>
+    <div class="btn-group">
+        <a href="employee.html" class="btn-employee">እኔ ሰራተኛ ነኝ</a>
+        <a href="employer.html" class="btn-employer">እኔ አሰሪ ነኝ</a>
+    </div>
+</div>
+
 </body>
 </html>
