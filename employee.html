@@ -2,16 +2,45 @@
 <html lang="am">
 <head>
     <meta charset="UTF-8">
-    <title>የሰራተኛ መረጃ መሙያ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የሰራተኛ ምዝገባ - Big Man Agency</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f1f5f9; padding: 20px; color: #334155; }
+        .form-container { max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #1e293b; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; margin-top: 20px; background: #3b82f6; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; }
+        button:hover { background: #2563eb; }
+    </style>
 </head>
 <body>
-    <h1>ለሰራተኞች</h1>
+
+<div class="form-container">
+    <h2>የስራ ፈላጊ ምዝገባ</h2>
     <form>
-        ሙሉ ስም: <input type="text"><br>
-        የስራ ልምድ: <textarea></textarea><br>
-        <button type="submit">መረጃ ላክ</button>
+        <label>ሙሉ ስም</label>
+        <input type="text" placeholder="ሙሉ ስምዎትን ያስገቡ">
+        
+        <label>የሚፈልጉት የሆቴል ስራ መደብ</label>
+        <select>
+            <option>Front Office / Reception</option>
+            <option>Housekeeping</option>
+            <option>Food & Beverage (Waiter/Waitress)</option>
+            <option>Chef / Kitchen Staff</option>
+        </select>
+        
+        <label>የስራ ልምድ (በዓመት)</label>
+        <input type="number" placeholder="ለምሳሌ: 3">
+        
+        <label>የሚናገሩት ቋንቋዎች</label>
+        <textarea rows="3" placeholder="ምሳሌ: አማርኛ፣ እንግሊዝኛ፣ አረብኛ"></textarea>
+        
+        <button type="submit">መረጃውን በፕሮፌሽናል መንገድ ይላኩ</button>
     </form>
     <br>
-    <a href="index.html">ወደ ዋናው ገጽ ተመለስ</a>
+    <a href="index.html" style="display:block; text-align:center; color: #64748b;">ወደ መጀመሪያው ገጽ ተመለስ</a>
+</div>
+
 </body>
 </html>
